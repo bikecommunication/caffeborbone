@@ -1,0 +1,361 @@
+/*!
+Theme Name: caffe-borbone
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: caffe-borbone
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+caffe-borbone is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&display=swap");
+body {
+	color: #181818;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.experience-component .container {
+	width: 100%;
+	max-width: initial;
+	margin: 0;
+	padding: 0;
+}
+
+.experience-component .container .row .col-12.mt-4 {
+	margin: 0 !important;
+	width: 100%;
+}
+
+.site-main {
+	position: relative;
+}
+
+.site-main::after {
+	content: '';
+	position: absolute;
+	background: url("./images/wave-footer.png");
+	background-size: 100% 100%;
+	height: 82px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.page-container {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/** typography */
+.page-title {
+	font-family: "Marcellus", serif;
+	font-size: 88px;
+	font-weight: 400;
+	line-height: 80px;
+	letter-spacing: -0.015em;
+	text-align: left;
+	color: #fff;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.page-subtitle {
+	font-size: 40px;
+	line-height: 42px;
+	color: #002856;
+}
+
+/** header ***/
+.page-header {
+	height: 700px;
+	display: flex;
+	align-items: center;
+	background-position: top center;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.page-header::after {
+	content: '';
+	background: url("./images/wave-header.png");
+	background-position: center bottom;
+	background-size: 100% 100%;
+	position: absolute;
+	bottom: -1px;
+	width: 100%;
+	height: 170px;
+}
+
+.page-header .page-header-inner {
+	width: 65%;
+	font-family: "Jost", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	line-height: 50px;
+	letter-spacing: -0.015em;
+	text-align: left;
+	color: #fff;
+	padding-bottom: 70px;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.site-main {
+	font-family: "Marcellus", serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+	letter-spacing: -0.015em;
+	text-align: left;
+}
+
+.site-main p {
+	margin-bottom: 0;
+}
+
+/*** button ***/
+.page-container .btn {
+	display: inline-block;
+	font-weight: 500;
+	color: #181818;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: .5rem 1rem;
+	font-size: .75rem;
+	line-height: 2rem;
+	border-radius: 2rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	text-decoration: none;
+}
+
+.page-container .btn-primary {
+	color: #fff;
+	background-color: #002856;
+	border-color: #002856;
+}
+
+#btn-scroll {
+	display: block;
+	background: url("./images/icon-scroll.png");
+	background-position: center center;
+	background-size: 100% 100%;
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 25px;
+	height: 25px;
+	z-index: 10;
+}
+
+/** section **/
+.mondo {
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: auto 100vh;
+	min-height: 100vh;
+	display: flex;
+	align-items: start;
+}
+
+.mondo .page-container {
+	padding: 15vh 0;
+}
+
+.mondo .page-subtitle::before {
+	content: '';
+	width: 74px;
+	height: 64px;
+	background: url("./images/icon-corona.png");
+	display: block;
+	margin-bottom: 20px;
+}
+
+.mondo.mondo-right {
+	margin-top: -50vh;
+	background-position: top right;
+	align-items: end;
+}
+
+.mondo.mondo-right .page-subtitle::before {
+	content: '';
+	margin-right: 0;
+	margin-left: auto;
+	background-position: top right !important;
+}
+
+@media screen and (min-width: 1681px) {
+	.mondo {
+		min-height: 100vh;
+		background-size: auto 100vh;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.mondo {
+		min-height: 80vh;
+		background-size: auto 80vh;
+	}
+	.mondo.mondo-right {
+		margin-top: -30vh;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.mondo .page-container {
+		padding: 10vh 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.mondo {
+		align-items: end;
+		background-size: 360px auto;
+		padding-top: 480px;
+		padding-bottom: 60px;
+	}
+	.mondo.mondo-right {
+		margin-top: -120px;
+	}
+	.mondo .page-container {
+		padding: 0 15px;
+	}
+	.mondo .page-container .page-subtitle::before {
+		content: '';
+		margin-right: auto;
+		margin-left: 0;
+	}
+}
+
+.sostenibilita {
+	position: relative;
+	margin-bottom: 120px;
+	background-size: cover !important;
+	background-attachment: fixed !important;
+	background-repeat: no-repeat !important;
+	background-position: top center;
+}
+
+.sostenibilita:after {
+	content: '';
+	width: 100%;
+	height: 230px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-image: url("./images/wave-sostenibilita.png");
+	background-position: bottom center;
+	background-repeat: no-repeat !important;
+	background-size: 100% auto;
+}
+
+.sostenibilita .page-container-wrapper {
+	position: relative;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+	padding: 60px;
+	background: #fff;
+	z-index: 10;
+	margin-top: 60px;
+	border-radius: 10px;
+}
+
+.sostenibilita .page-subtitle::before {
+	content: '';
+	width: 74px;
+	height: 64px;
+	background: url("./images/icon-sostenibilita.png");
+	display: block;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.sostenibilita {
+		background-size: auto 450px !important;
+		background-attachment: initial !important;
+		padding-top: 300px;
+		margin-bottom: 60px;
+	}
+	.sostenibilita:after {
+		bottom: inherit;
+		top: 230px;
+	}
+	.sostenibilita .page-container-wrapper {
+		padding: 20px;
+	}
+}
+
+.abstract {
+	line-height: 40px;
+	font-size: 22px;
+	color: #002856;
+	font-weight: 500;
+}
+
+.abstract .abstract-title {
+	font-family: "Jost", sans-serif;
+	font-size: 30px;
+	color: #002856;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 1100px) {
+	.page-container {
+		padding: 15px;
+	}
+	.separator {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.separator::before {
+		width: calc(100% - 30px);
+	}
+	.row-image img {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.btn-primary {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.page-title {
+		font-size: 65px;
+		line-height: 65px;
+	}
+	.page-header .page-header-inner {
+		width: 100%;
+		font-size: 32px;
+		line-height: 34px;
+		padding-bottom: 0;
+	}
+	.page-header::after {
+		content: '';
+		height: 75px;
+	}
+}
+
+/*# sourceMappingURL=style.css.map */
