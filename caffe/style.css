@@ -181,17 +181,12 @@ body {
 	align-items: start;
 }
 
-.mondo .page-container {
-	padding: 15vh 0;
+.mondo.large {
+	margin-bottom: 30vh;
 }
 
-.mondo .page-subtitle::before {
-	content: '';
-	width: 74px;
-	height: 64px;
-	background: url("./images/icon-corona.png");
-	display: block;
-	margin-bottom: 20px;
+.mondo .page-container {
+	padding: 15vh 0;
 }
 
 .mondo.mondo-right {
@@ -319,6 +314,120 @@ body {
 	font-size: 30px;
 	color: #002856;
 	font-weight: 700;
+}
+
+.abstract.abstract-text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+	letter-spacing: -0.015em;
+}
+
+.abstract.abstract-text .abstract-title {
+	font-family: "Marcellus", serif;
+	font-size: 40px;
+	line-height: 42px;
+	color: #002856;
+	font-weight: 400;
+}
+
+.timeline {
+	position: relative;
+}
+
+.timeline::after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	left: 50%;
+	top: 0%;
+	transform: translateX(-50%);
+	border-left: 1px solid #002856;
+	z-index: 2;
+	height: 100%;
+}
+
+.timeline .row:last-child .timeline-item::after {
+	content: "";
+	position: absolute;
+	border: 2px solid #fff;
+	height: 100%;
+	right: -2px;
+	top: 0;
+	z-index: 3;
+}
+
+.timeline .row:last-child .timeline-item.timeline-right::after {
+	content: "";
+	position: absolute;
+	border: 2px solid #fff;
+	height: 100%;
+	left: -2px;
+	right: auto;
+	top: 0;
+	z-index: 3;
+}
+
+.timeline-item {
+	padding-bottom: 60px;
+}
+
+.timeline-item::before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #002856;
+	top: -7.5px;
+	right: -7.5px;
+	border-radius: 99%;
+	z-index: 4;
+}
+
+.timeline-item.timeline-right::before {
+	right: auto;
+	left: -7.5px;
+}
+
+.timeline-item .timeline-title {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 35px;
+	color: #002856;
+	margin-top: 0;
+}
+
+.timeline-item .timeline-subtitle {
+	font-family: 'Jost';
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	color: #002856;
+}
+
+.grid {
+	padding-bottom: 50vh;
+}
+
+.grid .grid-item {
+	padding: 0 5% !important;
+}
+
+.grid .grid-item-title {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	color: #002856;
+	margin-top: 0;
+}
+
+.row-line {
+	margin-top: 150px;
+	margin-bottom: 150px;
 }
 
 @media screen and (max-width: 1100px) {
