@@ -46,6 +46,12 @@ body {
 	position: relative;
 }
 
+
+.site-main strong{
+	font-weight: 700 !important;
+}
+
+
 .site-main::after {
 	content: '';
 	position: absolute;
