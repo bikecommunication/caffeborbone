@@ -55,6 +55,7 @@ body {
 	width: 100%;
 	bottom: 0;
 	left: 0;
+	z-index: 4;
 }
 
 .page-container {
@@ -80,6 +81,30 @@ body {
 	font-size: 40px;
 	line-height: 42px;
 	color: #002856;
+}
+
+.page-subtitle-sub {
+	font-family: "Marcellus", serif;
+	font-weight: 400;
+	letter-spacing: -0.015em;
+	color: #002856;
+	font-size: 24px;
+}
+
+.mb-50vh {
+	margin-bottom: 50vh;
+}
+
+.mb-25vh {
+	margin-bottom: 25vh;
+}
+
+.mb-10vh {
+	margin-bottom: 10vh;
+}
+
+.mt-0 {
+	margin-top: 0 !important;
 }
 
 /** header ***/
@@ -202,6 +227,14 @@ body {
 	background-position: top right !important;
 }
 
+.mondo.mondo-cloumn {
+	padding-top: 60px !important;
+}
+
+.mondo.mondo-cloumn .col-md-5, .mondo.mondo-cloumn .col-md-6 {
+	margin-bottom: 60px;
+}
+
 @media screen and (min-width: 1681px) {
 	.mondo {
 		min-height: 100vh;
@@ -234,6 +267,9 @@ body {
 	}
 	.mondo.mondo-right {
 		margin-top: -120px;
+	}
+	.mondo.mondo-cloumn {
+		padding-top: 60px !important;
 	}
 	.mondo .page-container {
 		padding: 0 15px;
@@ -369,7 +405,7 @@ body {
 }
 
 .timeline-item {
-	padding-bottom: 60px;
+	padding-bottom: 120px;
 }
 
 .timeline-item::before {
@@ -387,6 +423,16 @@ body {
 .timeline-item.timeline-right::before {
 	right: auto;
 	left: -7.5px;
+}
+
+.timeline-item .timeline-logo {
+	margin-top: -120px;
+}
+
+.timeline-item .timeline-logo img {
+	width: auto;
+	max-height: 120px;
+	margin-bottom: 15px;
 }
 
 .timeline-item .timeline-title {
@@ -465,6 +511,46 @@ body {
 		content: '';
 		height: 75px;
 	}
+	.row-image {
+		margin-bottom: 30px;
+	}
+	.timeline::after {
+		content: "";
+		position: absolute;
+		width: 1px;
+		left: 30px;
+		top: 0%;
+		transform: none;
+		border-left: 1px solid #002856;
+		z-index: 2;
+		height: 100%;
+	}
+	.timeline .timeline-item {
+		text-align: left !important;
+		margin-bottom: 120px;
+		padding-left: 60px;
+	}
+	.timeline .timeline-item::before {
+		content: "";
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		background: #002856;
+		top: -7.5px;
+		left: 20px;
+		right: auto;
+	}
+	.row:last-child .timeline-item::after {
+		content: "";
+		position: absolute;
+		border: 2px solid #fff !important;
+		height: calc(100% + 120px) !important;
+		left: 24px !important;
+		right: auto;
+		top: 0;
+		z-index: 3;
+	}
+	.mb-50vh, .mb-25vh, .mb-10vh, .mt-0 {
+		margin-bottom: 0;
+	}
 }
-
-/*# sourceMappingURL=style.css.map */
