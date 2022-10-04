@@ -154,6 +154,7 @@ body {
 
 .page-header .page-container {
 	width: 100%;
+	max-width: inherit;
 	padding-left: 50px;
 	padding-right: 50px;
 }
