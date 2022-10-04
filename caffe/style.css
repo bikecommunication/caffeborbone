@@ -276,6 +276,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+
 	.mondo {
 		align-items: end;
 		background-size: 360px auto;
@@ -514,14 +516,20 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+	.page-header {
+		min-height: 500px;
+	}
+
+
 	.page-title {
-		font-size: 65px;
-		line-height: 65px;
+		font-size: 45px;
+		line-height: 45px;
 	}
 	.page-header .page-header-inner {
 		width: 100%;
-		font-size: 32px;
-		line-height: 34px;
+		width: 100%;
+		font-size: 26px;
+		line-height: 32px;
 		padding-bottom: 0;
 	}
 	.page-header::after {
