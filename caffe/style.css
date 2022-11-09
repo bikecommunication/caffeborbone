@@ -296,16 +296,21 @@ body {
 		padding-top: 100px;
 		padding-bottom: 100px;
 		min-height: initial;
+		min-height: 45vh;
 	}
+
 	.mondo.mondo-right {
 		margin-top: 0px;
 	}
+
 	.mondo.mondo-cloumn {
 		padding-top: 60px !important;
 	}
+	
 	.mondo .page-container {
 		padding: 0 15px;
 	}
+	
 	.mondo.large {
 		margin-bottom: 5vh;
 	}
@@ -564,16 +569,20 @@ body {
 
 @media screen and (max-width: 768px) {
 	.page-header {
-		min-height: 500px;
+		height: initial;
+		min-height: initial;
 	}
-
-
+	
 	.page-title {
 		font-size: 45px;
 		line-height: 45px;
 	}
+
+	.page-container {
+		padding: 65px;
+	}
+
 	.page-header .page-header-inner {
-		width: 100%;
 		width: 100%;
 		font-size: 26px;
 		line-height: 32px;
@@ -600,7 +609,7 @@ body {
 	.timeline .timeline-item {
 		text-align: left !important;
 		margin-bottom: 120px;
-		padding-left: 60px;
+		padding-left: 0;
 	}
 	.timeline .timeline-item::before {
 		content: "";
@@ -608,8 +617,8 @@ body {
 		width: 15px;
 		height: 15px;
 		background: #002856;
-		top: -7.5px;
-		left: 20px;
+		top: -66.5px;
+		left: -33px;
 		right: auto;
 	}
 	.row:last-child .timeline-item::after {
@@ -621,6 +630,7 @@ body {
 		right: auto;
 		top: 0;
 		z-index: 3;
+		display: none;
 	}
 	.mb-50vh, .mb-25vh, .mb-10vh, .mt-0 {
 		margin-bottom: 0  !important;
